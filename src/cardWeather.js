@@ -18,34 +18,52 @@ for (let i = 0; i < dataWeather.forecast.forecastday.length; i += 1) {
         </div>
         <ul class="list day-card__temp">
             <li class="day-card__temp-detale">
-                <img class="day-card__temp-img" src="https:${dataWeather.forecast.forecastday[i].hour[0].condition.icon}" alt="">
+                <div class="day-card__temp-icon">
+                    <p class="day-card__temp-time">${dataWeather.forecast.forecastday[i].hour[0].time.split(' ')[1]}</p>
+                    <img class="day-card__temp-img" src="https:${dataWeather.forecast.forecastday[i].hour[0].condition.icon}" alt="">
+                </div>
                 <p class="day-card__temp-moment">${dataWeather.forecast.forecastday[i].hour[0].temp_c} C</p>
-                <p class="day-card__temp-moment">${dataWeather.forecast.forecastday[i].hour[0].wind_kph} к/г</p>
+                <p class="day-card__temp-moment">${(dataWeather.forecast.forecastday[i].hour[0].wind_kph / 3.6).toFixed(1)} м/с</p>
             </li>
             <li class="day-card__temp-detale">
-                <img class="day-card__temp-img" src="https:${dataWeather.forecast.forecastday[i].hour[4].condition.icon}" alt="">
+                <div class="day-card__temp-icon">
+                    <p class="day-card__temp-time">${dataWeather.forecast.forecastday[i].hour[4].time.split(' ')[1]}</p>
+                    <img class="day-card__temp-img" src="https:${dataWeather.forecast.forecastday[i].hour[4].condition.icon}" alt="">
+                </div>
                 <p class="day-card__temp-moment">${dataWeather.forecast.forecastday[i].hour[4].temp_c} C</p>
-                <p class="day-card__temp-moment">${dataWeather.forecast.forecastday[i].hour[4].wind_kph} к/г</p>
+                <p class="day-card__temp-moment">${(dataWeather.forecast.forecastday[i].hour[4].wind_kph / 3.6).toFixed(1)} м/с</p>
             </li>
             <li class="day-card__temp-detale">
-                <img class="day-card__temp-img" src="https:${dataWeather.forecast.forecastday[i].hour[8].condition.icon}" alt="">
+                <div class="day-card__temp-icon">
+                    <p class="day-card__temp-time">${dataWeather.forecast.forecastday[i].hour[8].time.split(' ')[1]}</p>
+                    <img class="day-card__temp-img" src="https:${dataWeather.forecast.forecastday[i].hour[8].condition.icon}" alt="">
+                </div>
                 <p class="day-card__temp-moment">${dataWeather.forecast.forecastday[i].hour[8].temp_c} C</p>
-                <p class="day-card__temp-moment">${dataWeather.forecast.forecastday[i].hour[8].wind_kph} к/г</p>
+                <p class="day-card__temp-moment">${(dataWeather.forecast.forecastday[i].hour[8].wind_kph / 3.6).toFixed(1)} м/с</p>
             </li>
             <li class="day-card__temp-detale">
-                <img class="day-card__temp-img" src="https:${dataWeather.forecast.forecastday[i].hour[12].condition.icon}" alt="">
+                <div class="day-card__temp-icon">
+                    <p class="day-card__temp-time">${dataWeather.forecast.forecastday[i].hour[12].time.split(' ')[1]}</p>
+                    <img class="day-card__temp-img" src="https:${dataWeather.forecast.forecastday[i].hour[12].condition.icon}" alt="">
+                </div>
                 <p class="day-card__temp-moment">${dataWeather.forecast.forecastday[i].hour[12].temp_c} C</p>
-                <p class="day-card__temp-moment">${dataWeather.forecast.forecastday[i].hour[12].wind_kph} к/г</p>
+                <p class="day-card__temp-moment">${(dataWeather.forecast.forecastday[i].hour[12].wind_kph / 3.6).toFixed(1)} м/с</p>
             </li>
             <li class="day-card__temp-detale">
-                <img class="day-card__temp-img" src="https:${dataWeather.forecast.forecastday[i].hour[16].condition.icon}" alt="">
+                <div class="day-card__temp-icon">
+                    <p class="day-card__temp-time">${dataWeather.forecast.forecastday[i].hour[16].time.split(' ')[1]}</p>
+                    <img class="day-card__temp-img" src="https:${dataWeather.forecast.forecastday[i].hour[16].condition.icon}" alt="">
+                </div>
                 <p class="day-card__temp-moment">${dataWeather.forecast.forecastday[i].hour[16].temp_c} C</p>
-                <p class="day-card__temp-moment">${dataWeather.forecast.forecastday[i].hour[16].wind_kph} к/г</p>
+                <p class="day-card__temp-moment">${(dataWeather.forecast.forecastday[i].hour[16].wind_kph / 3.6).toFixed(1)} м/с</p>
             </li>
             <li class="day-card__temp-detale">
-                <img class="day-card__temp-img" src="https:${dataWeather.forecast.forecastday[i].hour[20].condition.icon}" alt="">
+                <div class="day-card__temp-icon">
+                    <p class="day-card__temp-time">${dataWeather.forecast.forecastday[i].hour[20].time.split(' ')[1]}</p>
+                    <img class="day-card__temp-img" src="https:${dataWeather.forecast.forecastday[i].hour[20].condition.icon}" alt="">
+                </div>
                 <p class="day-card__temp-moment">${dataWeather.forecast.forecastday[i].hour[20].temp_c} C</p>
-                <p class="day-card__temp-moment">${dataWeather.forecast.forecastday[i].hour[20].wind_kph} к/г</p>
+                <p class="day-card__temp-moment">${(dataWeather.forecast.forecastday[i].hour[20].wind_kph / 3.6).toFixed(1)} м/с</p>
             </li>
         </ul>
     </li>`

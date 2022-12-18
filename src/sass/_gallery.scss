@@ -79,6 +79,26 @@
     font-size: 30px;
    }
 
+   &__main-min {
+    color: violet;
+   }
+
+   &__main-aver {
+       color: green;
+   }
+
+   &__main-max {
+       color: red;
+   }
+
+   &__temp {
+    color: orangered;
+   }
+
+   &__temp-icon {
+    color: black;
+   }
+
    &__temp-detale{
     display: flex;
     justify-content: space-between;
