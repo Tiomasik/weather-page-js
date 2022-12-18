@@ -6,7 +6,7 @@ import Notiflix from 'notiflix';
 
 
 function getWeather(valueInput, days) {
-    const url = "http://api.weatherapi.com/v1/forecast.json?";
+    const url = "https://api.weatherapi.com/v1/forecast.json?";
     const parameters = {
         key: 'b1772f21bbd045f58d7145750221712',
         nameCity: valueInput,
